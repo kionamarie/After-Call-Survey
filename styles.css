@@ -1,0 +1,92 @@
+body {background-color: rgb(250, 227, 203); font-family: 'Verdana', sans-serif;}
+
+label {display: block; margin: 1.5rem 0}
+label[id="dropdown-label"]{
+    font-weight: bold;
+    font-size: 15px
+}
+label[id="yesno-label"]{
+    font-weight: bold;
+    font-size: 15px
+}
+label[id="advisors"]{
+    font-weight: bold;
+    font-size: 15px
+}
+label[id="comments-label"]{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+fieldset {
+    border-left: none; 
+    border-right: none; 
+    border-radius: 15px;
+    border-color: rgb(227, 192, 158);
+    padding: 20px;
+}
+fieldset[id="first"]{font-weight: bold; font-size: 15px;}
+
+
+input, textarea, select{
+    min-height: 2em;
+    background-color: rgb(250, 227, 203);
+    border: 1px solid rgb(227, 192, 158); 
+    border-radius: 5px;
+    color: grey;
+}
+
+input[id="name"]{width: 15%}
+input[id="email"]{width: 35%}
+input[id="number"]{width: 5%}
+
+input[type="radio"]{font-size: 2px}
+input[type="checkbox"]{font-size: 2px}
+
+input[type="submit"]{
+    display: block; 
+    margin: 1em auto;
+    width: 35%; 
+    height: 2em;
+    font-size: 14px;
+    color: black;
+    }
+
+
+textarea{
+    width: 50%; 
+    height: 5em; 
+    margin: auto;
+    display: block;
+    padding-top: 10px}
+
+.smallertext{font-size: 14px}
+
+
+div[id="banner"]{
+    background-color: rgb(227, 192, 158);
+    width: 80%; 
+    max-width: 500px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+div[id="form"]{
+    background-color: rgb(227, 192, 158);
+    width: 90%; 
+    max-width: 800px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 15px; 
+}
+
+p[id="p1"]{font-size: 16px}
+p[id="p2"]{font-size: 14px}
+
+.banner{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 2px 0px;
+}

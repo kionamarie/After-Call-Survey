@@ -7,18 +7,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>After-Call Survey</title>
   </head>
 
   <body>
-    <h1 id="title">After-Call Survey Form</h1>
-    <p id="description">
-      We thank you for taking the time to participate. Please fill out the form
-      based on your experience.
-    </p>
+    <div id="banner" class="banner">
+    <h1 class="banner">After-Call Survey Form</h1>
+    <p class="banner" id="p1">
+      We thank you for taking the time to participate.</p>
+    <p class="banner" id="p2">Please fill out the form based on your experience.</p>
+    </div>
+    
+    <div id="form">
     <form id="survey-form" action="https://register-demo.freecodecamp.org">
-      <fieldset>
+      <fieldset id="first">
         <label id="name-label">
           Enter your first and last name:
           <input id="name" type="text" required placeholder="i.e. Jane Doe" />
@@ -41,11 +44,11 @@
             required
             min="1"
             max="5"
-            placeholder="Enter a number"
+            placeholder="#"
           />
         </fieldset>
         </label>
-        <fieldset>
+        <fieldset id="second">
           <label id="dropdown-label">
             What was the purpose of your call?
             <select id="dropdown">
@@ -63,25 +66,26 @@
             Was the phone advisor able to assist you with the purpose of your
             call?</label
           >
-          <label><input name="yesno" type="radio" value="1" />Yes</label>
-          <label><input name="yesno" type="radio" value="2"/>Somewhat</label>
-          <label><input name="yesno" type="radio" value="3"/>No</label>
-          <label id="advisors">Choose any of the follow traits that you feel was displayed by the phone Advisor</label>
-            <label><input name="advisors" type="checkbox" value="1"/>Friendly</label>
-            <label><input name="advisors" type="checkbox" value="2"/>Knowledgeable</label>
-            <label><input name="advisors" type="checkbox" value="3"/>Helpful</label>
-            <label><input name="advisors" type="checkbox" value="4"/>Patient</label>
-            <label><input name="advisors" type="checkbox" value="5"/>Rude</label>
-            <label><input name="advisors" type="checkbox" value="6"/>Pushy</label>
-            <label><input name="advisors" type="checkbox" value="7"/>Confusing</label>
-            <label><input name="advisors" type="checkbox" value="8"/>Ignorant</label>
+          <label class="smallertext"><input name="yesno" type="radio" value="1" />Yes</label>
+          <label class="smallertext"><input name="yesno" type="radio" value="2"/>Somewhat</label>
+          <label class="smallertext"><input name="yesno" type="radio" value="3"/>No</label>
+          <label id="advisors">Choose any of the following traits that you feel was displayed by the phone Advisor:</label>
+            <label class="smallertext"><input name="advisors" type="checkbox" value="1"/>Friendly</label>
+            <label class="smallertext"><input name="advisors" type="checkbox" value="2"/>Knowledgeable</label>
+            <label class="smallertext"><input name="advisors" type="checkbox" value="3"/>Helpful</label>
+            <label class="smallertext"><input name="advisors" type="checkbox" value="4"/>Patient</label>
+            <label class="smallertext"><input name="advisors" type="checkbox" value="5"/>Rude</label>
+            <label class="smallertext"><input name="advisors" type="checkbox" value="6"/>Pushy</label>
+            <label class="smallertext"><input name="advisors" type="checkbox" value="7"/>Confusing</label>
+            <label class="smallertext"><input name="advisors" type="checkbox" value="8"/>Ignorant</label>
         </fieldset>
         <fieldset>
             <label id="comments-label">
                 Please enter any additional comments or concerns you may have: 
-                <textarea id="comments" placeholder="Enter your feedback here:"></textarea></label>
+                <textarea id="comments"></textarea></label>
         </fieldset>
         <input id="submit" type="submit" value="Submit" />
     </form>
+  </div>
   </body>
 </html>
