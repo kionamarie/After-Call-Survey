@@ -1,0 +1,87 @@
+<!-- Survey form project -->
+<!-- Theme: After-call survey concept from Blackboard-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>After-Call Survey</title>
+  </head>
+
+  <body>
+    <h1 id="title">After-Call Survey Form</h1>
+    <p id="description">
+      We thank you for taking the time to participate. Please fill out the form
+      based on your experience.
+    </p>
+    <form id="survey-form" action="https://register-demo.freecodecamp.org">
+      <fieldset>
+        <label id="name-label">
+          Enter your first and last name:
+          <input id="name" type="text" required placeholder="i.e. Jane Doe" />
+        </label>
+        <label id="email-label">
+          Enter your email address:
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="janedoe@company.com"
+          />
+        </label>
+        <label id="number-label">
+          On a scale of 1 to 5, how satisfied do you feel after completing your
+          call with our Helpdesk support line?
+          <input
+            id="number"
+            type="number"
+            required
+            min="1"
+            max="5"
+            placeholder="Enter a number"
+          />
+        </fieldset>
+        </label>
+        <fieldset>
+          <label id="dropdown-label">
+            What was the purpose of your call?
+            <select id="dropdown">
+              <option value="">Select an option</option>
+              <option value="1">
+                Admissions, Records, Registration Inquiry (ARR)
+              </option>
+              <option value="2">Financial Aid Inquiry (FA)</option>
+              <option value="3">General Inquiry</option>
+              <option value="4">Login Issues</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+          <label id="yesno-label">
+            Was the phone advisor able to assist you with the purpose of your
+            call?</label
+          >
+          <label><input name="yesno" type="radio" value="1" />Yes</label>
+          <label><input name="yesno" type="radio" value="2"/>Somewhat</label>
+          <label><input name="yesno" type="radio" value="3"/>No</label>
+          <label id="advisors">Choose any of the follow traits that you feel was displayed by the phone Advisor</label>
+            <label><input name="advisors" type="checkbox" value="1"/>Friendly</label>
+            <label><input name="advisors" type="checkbox" value="2"/>Knowledgeable</label>
+            <label><input name="advisors" type="checkbox" value="3"/>Helpful</label>
+            <label><input name="advisors" type="checkbox" value="4"/>Patient</label>
+            <label><input name="advisors" type="checkbox" value="5"/>Rude</label>
+            <label><input name="advisors" type="checkbox" value="6"/>Pushy</label>
+            <label><input name="advisors" type="checkbox" value="7"/>Confusing</label>
+            <label><input name="advisors" type="checkbox" value="8"/>Ignorant</label>
+        </fieldset>
+        <fieldset>
+            <label id="comments-label">
+                Please enter any additional comments or concerns you may have: 
+                <textarea id="comments" placeholder="Enter your feedback here:"></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
